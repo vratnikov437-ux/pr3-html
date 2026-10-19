@@ -1,0 +1,40 @@
+// ==========================================
+// БАЗОВЫЕ СТИЛИ
+// ==========================================
+
+// 1. Тестовый класс для проверки autoprefixer (Шаг 16)
+.test-autoprefixer {
+  user-select: none;
+}
+
+// 2. Базовые стили для всего проекта
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Чтобы padding не увеличивал ширину элементов
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif; // Позже заменим на переменную из _variables.scss
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
